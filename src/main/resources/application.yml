@@ -1,3 +1,7 @@
 spring:
     application:
         name: spring-practice-websocket-messaging-with-stomp
+    
+    threads:
+        virtual:
+            enabled: true
