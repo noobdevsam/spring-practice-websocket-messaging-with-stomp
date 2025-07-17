@@ -1,0 +1,3 @@
+spring:
+    application:
+        name: spring-practice-websocket-messaging-with-stomp
