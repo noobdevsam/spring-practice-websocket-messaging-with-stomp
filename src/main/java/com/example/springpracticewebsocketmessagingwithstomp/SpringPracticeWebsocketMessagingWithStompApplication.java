@@ -58,7 +58,7 @@ class Greeting {
 class GreetingController {
 
     @MessageMapping("/hello") //ensures that, if a message is sent to the /hello destination
-    @SendTo("/topic/greetings")
+    @SendTo("/topic/greetings") // it will be broadcast to all subscribers of the /topic/greetings destination
     public Greeting greeting(HelloMessage helloMessage) throws InterruptedException {
         Thread.sleep(2000); // Simulate a delay
 
