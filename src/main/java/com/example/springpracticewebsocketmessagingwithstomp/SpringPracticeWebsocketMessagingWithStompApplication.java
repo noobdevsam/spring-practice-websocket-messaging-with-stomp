@@ -84,6 +84,7 @@ class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         registry.enableSimpleBroker("/topic");
 
         // Set the application destination prefix
+        // for messages that are bound for methods annotated with @MessageMapping
         registry.setApplicationDestinationPrefixes("/app");
     }
 
